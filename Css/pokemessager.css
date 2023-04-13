@@ -1,0 +1,73 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Secular One', sans-serif;
+}
+
+.pokemessager {
+    background-color: #0D0D0D;
+    height: 100vh;
+    width: 100%;
+}
+
+.response-box p {
+    background-color: #D9D9D9;
+    display: inline-block;
+    margin-left: 5%;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.message-input {
+    display: flex;
+    margin-bottom: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-right: 5%;
+    width: 85%;
+}
+
+.send {
+    background-color: rgba(140, 32, 32, 0);
+    border: none;
+    cursor: pointer;
+    height: 36px;
+    rotate: -45deg;
+    margin-left: 5px;
+}
+
+.mess {
+    
+    margin-bottom: 80px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+.text-bubble {
+    margin-right: 5%;
+    padding: 5px;
+    text-align: right;
+}
+
+.mtex {
+    display: inline-block;
+    background-color: #A3291C;
+    padding: 5px;
+    
+}
+
+.message-textbox {
+    color: white;
+    background-color: #5F5F5F;
+    border: none;
+    font-size: 20px;
+    height: 40px;
+    margin-right: 10px;
+    padding-left:  10px;
+    width: 100%;
+}

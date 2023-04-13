@@ -1,0 +1,71 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Secular One', sans-serif;
+}
+
+.pokemon{
+    background-color: #F93D29;
+    height: 88.9vh;
+    padding: 90px 0 0;
+    animation-name: poke-background;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    position: relative;
+    
+}
+
+@keyframes poke-background {
+    from {background-color: #F93D29;}
+    to {background-color: black;}
+}
+
+.pokecenter_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+}
+
+.upper-pokeball {
+    animation-name: upper-pokeball;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 189px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 289px;
+}
+
+@keyframes upper-pokeball {
+    from {opacity: 0;}
+    to {opacity: 100%;}
+}
+
+.poke-title {
+    color: white;
+    font-size: 64px;
+    text-align: center;
+}
+
+.poke-call {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 150px;
+    width: 100%;
+}
+
+.poke-icon {
+    margin-right: 30px;
+}
+
+

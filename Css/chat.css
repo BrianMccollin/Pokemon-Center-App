@@ -1,0 +1,248 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Secular One', sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+.toggle {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 5%;
+    z-index: 2;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    opacity: 0;
+}
+
+.burger {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+    width: 30px;
+    height: 30px;
+    margin-top: 7px;
+    margin-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.burger > div {
+    position: relative;
+    width: 66%;
+    height: 3px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s ease;
+}
+
+.burger > div:before,
+.burger > div:after {
+    content: '';
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top: -10px;
+    width: 133%;
+    height: 3px;
+    background: inherit;
+}
+
+.burger > div:after {
+    top: 10px;
+    
+    width: 66%;
+}
+
+/* toggle animate */
+.toggle:checked + .burger > div {
+    transform: rotate(45deg);
+    width: 100%;
+}
+/* turn toggle into a X */
+.toggle:checked + .burger > div:before, 
+.toggle:checked + .burger > div:after {
+    top: 0;
+    transform: rotate(90deg);
+    width: 100%;
+}
+
+.toggle:checked ~ nav {
+    transform: translatex(0);
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+    background-color: black;
+    width: 100%;
+}
+
+nav ul {
+    margin-top: 90px;
+    
+}
+
+nav ul li {
+    
+    color: white;
+    text-decoration: none;
+    list-style-type: none;
+    padding-bottom: 20px;
+    padding-left: 10%;
+    font-size: 20px;
+    
+}
+
+nav ul li a {
+    text-decoration: inherit;
+    color: inherit;
+    
+}
+
+.poke-chatter {
+    background-color: #F94E29;
+    overflow: hidden;
+    height: 100vh;
+}
+
+h2 {
+    color: white;
+    font-size: 36px;
+    position: absolute;
+    top: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pokeball {
+    
+    position: relative;
+    height: 700px;
+    margin-top: 32px;
+    width: 100%;
+    z-index: 1;
+}
+
+.circle4 {
+    border: white solid 3px;
+    margin: 0;
+    border-radius: 50%;
+    height: 400px;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    animation-name: exspansion4;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+
+.circle3 {
+    background-color: #FF9F8A;
+    border-radius: 50%;
+    height: 300px;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    width: 250px;
+    animation-name: exspansion3;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle2 {
+    background-color: #FD7456;
+    border-radius: 50%;
+    height: 250px;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 250px;
+    animation-name: exspansion2;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.circle1 {
+    background-color: #F94E29;
+    border-radius: 50%;
+    height: 200px;
+    margin-right: -50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    animation-name: exspansion1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.pokechat_img {
+    display: block;
+    margin: 15% auto 0;
+    width: 152px;
+}
+
+.icon-section {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 9;
+}
+
+.chat-icon {
+    margin-right: 25px;
+}
+
+@keyframes exspansion1 {
+    from {width: 200px; height: 200px;}
+    to {width: 225px; height: 225px;}
+}
+@keyframes exspansion2 {
+    from {width: 250px; height: 250px;}
+    to {width: 275px; height: 275px;}
+}
+@keyframes exspansion3 {
+    from {width: 300px; height: 300px;}
+    to {width: 400px; height: 400px;}
+}
+@keyframes exspansion4 {
+    from {width: 400px; height: 400px;}
+    to {width: 950px; height: 950px;}
+}

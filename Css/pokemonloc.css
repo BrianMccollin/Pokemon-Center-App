@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Secular One', sans-serif;
+}
+
+.pokemon-bg {
+    background-color: #F93D29;
+    height: 88.9vh;
+    padding: 90px 5% 0 4%;
+}
+
+.map-title {
+    color: white;
+    margin-bottom: 15px;
+}
+
+.main-map {
+    width: 100%;
+}
+
+.mapmarker {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+}
+
+.indigomarker {
+    cursor: pointer;
+    position: absolute;
+    width: 30px;
+}
+
+#indigo {
+    top: 146px;
+    left: 24px;
+}
+
+#viridian {
+    top: 230px;
+    left: 101px;
+}
+
+#pewter {
+    top: 150px;
+    left: 90px;
+}
+
+#route-4 {
+    top: 155px;
+    left: 160px;
+}
+
+#cerulean {
+    top: 155px;
+    left: 214px;
+}
+
+#route-10 {
+    top: 165px;
+    right: 22px;
+}
+
+#levander {
+    top: 199px;
+    right: 28px;
+}
+
+#saffron {
+    top: 213px;
+    left: 220px;
+}
+
+#vermillion {
+    top: 245px;
+    left: 215px;
+}
+
+#celadon {
+    top: 210px;
+    left: 180px;
+}
+
+#fuschia {
+    top: 325px;
+    left: 215px;
+}
+
+#cinnibar {
+    top: 365px;
+    left: 101px;
+}
+.display-details {
+    background-color: white;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.detail-img {
+    margin: 10px 5%;
+    width: 90%;
+}
+
