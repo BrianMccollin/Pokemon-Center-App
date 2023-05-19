@@ -6,11 +6,13 @@ function tbubble(some) {
 }
 
 function myFunction(){
-    const x=document.getElementById("textbox").value;
-    const textnode = document.createTextNode(x);
+    const x=document.getElementById("textbox");
+    const textnode = document.createTextNode(x.value);
     const para= document.createElement("p");
 
     para.setAttribute("class", "mtex");
     para.appendChild(textnode);
     tbubble(para);
+
+    x.value = '';
 }
