@@ -1,3 +1,6 @@
+const send = document.getElementById('send');
+send.addEventListener("click", myFunction);
+
 function tbubble(some) {
     const container = document.createElement("div");
     container.setAttribute("class", "text-bubble");
